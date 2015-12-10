@@ -33,7 +33,9 @@ compile 'no.hyper.distributedspacelayout:distributedspacelayout:0.1'
 
 </no.hyper.distributedspacelayout.DistributedSpaceLayout>
 ```
-Four Space children are added into this view : one before the first button, one between each buttons and the last one at the end.
+Four Space children are added into this view : one before the first button, one between each buttons and the last one at the end :
+
+![screenshot_2015-12-10-10-08-09](https://cloud.githubusercontent.com/assets/1524348/11718253/4ca6c354-9f55-11e5-8932-4e7b47733e25.png)
 
 ## Liscence
 ```
