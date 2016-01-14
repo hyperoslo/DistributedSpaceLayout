@@ -3,18 +3,21 @@ This is a tiny library extending LinearLayout to automatically distribute evenly
 
 ## Gradle
 ```
-compile 'no.hyper.distributedspacelayout:distributedspacelayout:0.1'
+compile 'no.hyper.distributedspacelayout:distributedspacelayout:0.2'
 ```
 
 ## Usage
 ```xml
 <no.hyper.distributedspacelayout.DistributedSpaceLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/auto-res"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="no.hyper.distributedspacelayoutproject.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    custom:start="true"
+    custom:end="true">
 
     <Button
         android:layout_width="match_parent"
@@ -36,6 +39,8 @@ compile 'no.hyper.distributedspacelayout:distributedspacelayout:0.1'
 Four Space children are added into this view : one before the first button, one between each buttons and the last one at the end :
 
 ![screenshot_2015-12-10-10-08-09](https://cloud.githubusercontent.com/assets/1524348/11718253/4ca6c354-9f55-11e5-8932-4e7b47733e25.png)
+
+The custom attributes `start` and `end` are used to specify if you want a space element added before your first child and after the last one. The default value is `true` when they are not declared in the xml.
 
 ## Liscence
 ```
