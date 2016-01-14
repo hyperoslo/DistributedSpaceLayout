@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DistributedSpaceLayout">
+        <attr name="start" format="boolean" />
+        <attr name="end" format="boolean" />
+    </declare-styleable>
+</resources>

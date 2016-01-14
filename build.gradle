@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "0.2"
     }
     buildTypes {
         release {
@@ -23,3 +23,22 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'DistributedSpaceLayout'
+
+    publishedGroupId = 'no.hyper.distributedspacelayout'
+    libraryName = 'distributedspacelayout'
+    artifact = 'distributedspacelayout'
+
+    libraryDescription = 'This is a tiny library extending LinearLayout to automatically distribute evenly spaces between children without doing anything'
+    libraryVersion = '0.1'
+
+    developerId = 'hyper-oslo'
+    developerName = 'Hyper Oslo'
+    developerEmail = 'android@hyper.no'
+}
+
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'
