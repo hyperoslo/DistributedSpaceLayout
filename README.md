@@ -10,7 +10,7 @@ compile 'no.hyper.distributedspacelayout:distributedspacelayout:0.2'
 ```xml
 <no.hyper.distributedspacelayout.DistributedSpaceLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res/auto-res"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
